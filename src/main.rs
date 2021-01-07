@@ -8,12 +8,12 @@ fn main() {
     let mut input = String::new();
 
     let args: Vec<String> = env::args().collect();
-    if args.len() > 0 {
-        input = args[0].clone()
+    if args.len() > 1 {
+        input = args[1].clone()
     } else {
         io::stdin().read_line(&mut input).unwrap();
     }
 
     let crypted = hash(input.trim_end(), DEFAULT_COST).unwrap();
-    println!("{}", crypted);
+    println!("crypted {}", crypted);
 }
