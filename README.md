@@ -4,7 +4,7 @@ Command line tool for bcrypt hash
 
 ## Installation
 
-Get binary from [release](TBD) page or build your own local machine.
+build your own local machine.
 
 ```shell
 cargo build --release
