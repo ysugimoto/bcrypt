@@ -8,6 +8,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run: cargo install cross
+      - run: rustup target add x86_64-apple-darwin
       - run: make build
       - persist_to_workspace:
           root: .
