@@ -6,9 +6,7 @@ jobs:
       name: default
     steps:
       - checkout
-      - setup_remote_docker
-      - run: cargo install cross
-      - run: make linux
+      - run: cargo build
       - persist_to_workspace:
           root: .
           paths:
