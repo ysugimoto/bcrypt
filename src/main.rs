@@ -15,5 +15,5 @@ fn main() {
     }
 
     let crypted = hash(input.trim_end(), DEFAULT_COST).unwrap();
-    println!("crypted {}", crypted);
+    println!("{}", crypted);
 }
