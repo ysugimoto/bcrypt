@@ -28,7 +28,7 @@ echo "foobar" | bcrypt
 
 Note that on getting from stdin, tailing LF is trimmed (avoid edge case that LF contains in macos's echo even if piped from `echo -n`)
 
-### Licene
+### License
 
 MIT
 
